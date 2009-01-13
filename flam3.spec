@@ -1,6 +1,6 @@
 %define name	flam3
 %define version	2.7.17
-%define release	%mkrel 1
+%define release	%mkrel 2
 %define	libname	%{mklibname %{name}}_0
 %define develname %mklibname %{name} -d
 
@@ -63,7 +63,6 @@ flam3.
 %defattr(-,root,root)
 %doc COPYING.txt README.txt *.flam3
 %_bindir/*
-%_datadir/%{name}/*
 %_mandir/man1/*
 
 %files -n %{develname}
@@ -77,3 +76,4 @@ flam3.
 %files -n %{libname} 
 %defattr(-,root,root)
 %_libdir/*.so.*
+%_datadir/%{name}/*
