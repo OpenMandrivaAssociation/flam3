@@ -1,6 +1,6 @@
 %define name	flam3
-%define version	2.7.17
-%define release	%mkrel 2
+%define version	2.7.18
+%define release	%mkrel 1
 %define	libname	%{mklibname %{name}}_0
 %define develname %mklibname %{name} -d
 
@@ -48,13 +48,13 @@ flam3.
 %setup -q
 
 %build
-%define __libtoolize /bin/true
+export LIBS=-lm 
 %configure2_5x --enable-shared
 %make
 
 %install
 %__rm -rf %{buildroot}
-%makeinstall
+%makeinstall 
 
 %clean
 %__rm -rf %{buildroot}
