@@ -1,6 +1,6 @@
 %define name	flam3
 %define version	2.7.18
-%define release	%mkrel 2
+%define release	%mkrel 3
 %define	libname	%{mklibname %{name}}_0
 %define develname %mklibname %{name} -d
 
