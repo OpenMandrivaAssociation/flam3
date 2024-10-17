@@ -11,7 +11,7 @@ Release:	%{release}
 Source0:	%{name}-%{version}.tar.gz
 License: 	GPLv2
 Group:		Graphics
-Url:		http://flam3.com/
+Url:		https://flam3.com/
 Requires:	%{libname} = %{version}-%{release}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libz-devel, libpng-devel, libjpeg-devel, libxml2-devel
